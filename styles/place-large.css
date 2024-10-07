@@ -1,0 +1,19 @@
+@media (min-width: 1090px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        background-color: var(--forestgreen-color);
+    }
+
+    #weather-title {
+        margin-right: 2rem
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+}

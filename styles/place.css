@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,200;1,200&display=swap'); 
+
+:root{
+    --heading-font: "Ubuntu Sans", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --light-color: #ffffff;
+    --accent-color: #A21026;
+    --dark-color: #000000;
+    --forestgreen-color: #87b7f7;
+    --lightgray-color: #a9a9a9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1280px;
+    font-family: var(--paragraph-font);
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--light-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    padding: .5rem;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    padding: .6rem;
+}
+
+header{
+    background-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+main{
+    background-color: var(--light-color);
+}
+
+.hero img{
+    width:100%;
+    height:360px;
+    object-fit: cover;
+}
+
+#weather-icon{
+    width: 75px;
+    height: 100px;
+}
+
+table{
+    font-size: 1rem;
+    padding: .8rem;
+    margin: 0 auto;
+}
+
+th{
+    text-align: right;
+    width: auto;
+    padding-right: .5rem;
+    white-space: nowrap;
+}
+
+tr{
+    text-align: left;
+}
+
+section{
+    border-top: 1px solid var(--accent-color);
+}
+
+footer{
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    padding: 1rem;
+    font-weight: bold;
+}

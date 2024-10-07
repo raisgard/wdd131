@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Bolaji Olawale Ajibola </title>
+
+    <meta name="author" content="Bolaji Olawale Ajibola">
+    <meta name="description" content="WDD 131- Country Page">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <!--Google font updated-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+
+    <script src="script/getdates.js" defer></script>
+    <script src="week03/scripts/place.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="week03/images/leo.webp" media="(min-width: 724px)">
+                <img src="week03/images/saban.webp" alt="Nigeria" width="360" height="200">
+            </picture>
+            <section id="data-section">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>910770 sq. km</td>
+                    </tr>
+
+                    <tr>
+                        <th>Population:</th>
+                        <td>218.54 million</td>
+                    </tr>
+
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Abuja</td>
+                    </tr>
+
+                    <tr>
+                        <th>Language:</th>
+                        <td>Yoruba, Igbo, Hausa, Pidgin etc</td>
+                    </tr>
+
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Naira</td>
+                    </tr>
+
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>West African Time (WAT)</td>
+                    </tr>
+
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+234</td>
+                    </tr>
+
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.ng</td>
+                    </tr>                
+                </table>
+            </section>
+            <section id="weather-section">
+                <h2 id="weather-title">Weather</h2>
+                <img id="weather-icon" src="week03/images/weather-icon.svg" alt="Weather Icon">
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td><span id="temperature">24</span> <span id="temperature-unit">°C</span></td>
+                    </tr>
+
+                    <tr>
+                        <th>Condition:</th>
+                        <td>Partly sunny</td>
+                    </tr>
+
+                    <tr>
+                        <th>Wind:</th>
+                        <td><span id="wind">12</span> <span id="wind-unit"> kmph</span></td>
+                    </tr>
+
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="wind-chill"></td> 
+                    </tr>  
+                </table>
+            </section> 
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌜 Bolaji Olawale Ajibola🌛 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
