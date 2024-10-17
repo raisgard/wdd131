@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+
+    <meta name="author" content="Bolaji Olawale Ajibola">
+    <meta name="description" content="WDD 131 | Temple Album">
+    
+    <link rel="stylesheet" href="week04/filtered-temples.css">
+    <link rel="stylesheet" href="week04/filtered-temples-large.css">
+
+    <script src="script/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body> 
+    <header>
+        <h1>Temple Album</h1>
+        <button id="ham-menu"></button>
+        <nav>
+            <ul class="navigation wrap">
+                <li><a href="#" class="active" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div id="temple-gallery" class="temple-gallery"></div>  
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌟Bolaji Olawale Ajibola🌟 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
