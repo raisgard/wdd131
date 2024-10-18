@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 8px;
+    background-color: #420254;
+}
+
+body{
+    max-width: 500px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main{
+    background-color:#cbc5c5;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+h1{
+    padding:.5rem;
+    color: #FFFFFF;
+}
+
+form{
+    display: grid;
+}
+
+form label{
+    width:100%;
+    text-align: left;
+}
+
+.item-header{
+    text-align: left;
+}
+
+input[type="date"],
+input[type="text"],
+select,
+textarea{
+    width:100%;
+    padding: 0.8rem 0.6rem;
+    margin: .5rem 0;
+}
+
+legend{
+    padding-bottom: 1rem;
+
+}
+
+fieldset{
+    border: none;
+}
+
+.star-ratings{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    margin: .6rem 0;
+    position: relative;
+}
+
+.star-ratings input{
+    display: none;
+}
+
+.star-ratings > label{
+    width: 4.5rem;
+    height: 30px;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    caret-color: whitesmoke;
+}
+
+.star-ratings > label:hover{
+    color: #f50606;
+}
+
+.star-ratings label:active::before{
+    transform: scale(1.5);
+}
+
+.star-ratings label::before{
+    content: "\25CB";
+    position: absolute;
+    top: 0;
+    line-height: 10px;
+}
+
+.star-ratings input:checked~ label:before{
+    content: "\25CD";
+}
+
+#features{
+    display: grid;
+    grid-template-columns: 1.5rem auto;
+    gap:1rem .5rem;
+    padding: .5rem 0;
+}
+
+button[type="submit"]{
+    padding:.5rem .5rem;
+    background-color: #f7f2f2;
+    color:#0b0b0b;
+    font-weight: bold;
+    border-color: #cbc5c5;
+}
+
+button:hover {
+    background-color: lightcyan;
+}
+
+main p{
+    margin-bottom: 1rem;
+}
+
+footer{
+    background-color: #420254;
+    color:#FFFFFF;
+    padding: 1rem 0;
+    margin-top: 8px;
+}
