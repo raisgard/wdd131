@@ -76,6 +76,8 @@ img {
   background-size: contain;
   background-position: center bottom;
   height: 550px;
+  opacity: 1;
+  transition: -0.5s;
 }
 
 .hero .hero-content {
