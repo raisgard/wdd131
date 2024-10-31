@@ -562,4 +562,15 @@ button:hover {
   color: lightskyblue;
 }
 
-
+@media (max-width: 768px) {
+  input[type="date"],
+input[type="text"],
+input[type="password"],
+select, button,
+textarea{
+  width:20%;
+  padding: 0.8rem 0.6rem;
+  margin: 40px auto;
+  
+}
+}
